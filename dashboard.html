@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crime Data Analysis and Visualisation System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="logo-box">
+          <img src="glasgow-logo.png" alt="University of Glasgow logo">
+        </div>
+        <div>
+          <p class="overline">University of Glasgow</p>
+          <h1>Crime Data Analysis And Visualisation System</h1>
+        </div>
+      </div>
+
+      <nav class="topnav">
+        <a href="#systems">Systems</a>
+        <a href="#dataset">Dataset</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="badge">3 linked systems</span>
+          <h3>A unified platform for exploring crime patterns, trends, and insights through interactive visual analytics</h3>
+          <p>
+            This dashboard brings together three connected analytical systems for crime data exploration,
+            helping users move from core filtering and linked interaction to richer incident-level and
+            generalised visual analysis in one place.
+          </p>
+        </div>
+      </section>
+
+      <section class="systems-section" id="systems">
+        <div class="section-head">
+          <div>
+            <p class="overline">System navigator</p>
+            <h3>Choose a systems</h3>
+          </div>
+        </div>
+
+        <div class="systems-grid">
+          <article class="system-card neutral">
+            <div class="card-top">
+              <span class="pill">System A</span>
+              <span class="mini-status">Foundation</span>
+            </div>
+            <h4>Multi-Level Filtering</h4>
+            <ul class="feature-list">
+              <li>Supports multi-level filtering and interaction using Altair selections</li>
+              <li>Acts as the foundational system powering all subsequent dashboards</li>
+            </ul>
+            <a class="btn dark" href="index.html">Open</a>
+          </article>
+
+          <article class="system-card gold">
+            <div class="card-top">
+              <span class="pill">System B</span>
+              <span class="mini-status">Interactive</span>
+            </div>
+            <h4>Map-driven detailed analysis</h4>
+            <ul class="feature-list">
+              <li>Provides a highly interactive dashboard for exploring crime incidents</li>
+              <li>Enables multi-level filtering (incident → area → generalised view)</li>
+              <li>Supports dynamic brushing and linking across all visual components</li>
+            </ul>
+            <a class="btn gold-btn" href="SYSTEM_B.html">Open</a>
+          </article>
+
+          <article class="system-card blue">
+            <div class="card-top">
+              <span class="pill">System C</span>
+              <span class="mini-status">Analytical</span>
+            </div>
+            <h4>Interactive filtered exploration</h4>
+            <ul class="feature-list">
+              <li>Presents a structured analytical dashboard for crime data insights</li>
+              <li>Focuses on high-level analysis and generalised selection (crime description → crime group)</li>
+            </ul>
+            <a class="btn primary" href="SYSTEM_C.html">Open</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="dataset-panel">
+        <div class="section-head compact">
+          <div>
+            <p class="overline">Dataset info</p>
+            <h3>At a glance</h3>
+          </div>
+        </div>
+
+        <div class="dataset-grid">
+          <div class="dataset-item">
+            <span>Name</span>
+            <strong>Crime Data</strong>
+          </div>
+          <div class="dataset-item">
+            <span>Link</span>
+            <strong><a href="https://www.kaggle.com/datasets/ishajangir/crime-data" target="_blank">Open Kaggle dataset</a></strong>
+          </div>
+          <div class="dataset-item">
+            <span>Useful fields</span>
+            <strong>Date, area, crime type, age, sex, latitude, longitude</strong>
+          </div>
+          <div class="dataset-item">
+            <span>Purpose</span>
+            <strong>Supports trend, geographic, and victim-based analysis</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
